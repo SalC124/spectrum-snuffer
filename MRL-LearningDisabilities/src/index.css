@@ -1,3 +1,20 @@
+:root {
+  --black: #2e3440;
+  --darker-gray: #3b4252;
+  --dark-gray: #434c5e;
+  --gray: #4c566a;
+
+  --teal: #8fbcbb;
+  --light-blue: #88c0d0;
+  --cornflower: #81a1c1;
+  --bue: #5e81ac;
+  --reb: #bf616a;
+  --orange: #d08770;
+  --yellow: #ebcb8b;
+  --green: #a3be8c;
+  --porpol: #b48ead;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,12 +26,13 @@ body {
   line-height: 1.6;
   background-color: #eceff4;
   color: #333;
+  background: var(--dark-gray)
 }
 
 header {
-  background: #333;
+  background: var(--black);
   color: #fff;
-  padding: 1rem 0;
+  /* padding: 1rem 0; */
   text-align: center;
 }
 
@@ -22,7 +40,7 @@ nav {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  background: #444;
+  background: var(--darker-gray);
   padding: 0.5rem 0;
 }
 
@@ -33,7 +51,7 @@ nav a {
 }
 
 .hero {
-  background: linear-gradient(to right, #4b79a1, #283e51);
+  background: linear-gradient(to bottom, var(--darker-gray), var(--gray));
   color: #fff;
   padding: 4rem 2rem;
   text-align: center;
@@ -52,29 +70,25 @@ nav a {
 }
 
 .card-ai {
-  background: #fff;
+  background: var(--darker-gray);
   padding: 1.5rem;
-  border-radius: 10px;
-  border-color: #000000;
-  border-style: solid;
-  border-width: 1px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: 12px 12px 0px var(--gray);
+  color: var(--light-blue)
 }
 
 .card {
-  background: #fff;
+  background: var(--darker-gray);
   padding: 1.5rem;
-  border-radius: 10px;
-  border-color: #000000;
-  border-style: solid;
-  border-width: 1px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: 12px 12px 0px var(--gray);
+  color: var(--light-blue)
 }
 
 footer {
   text-align: center;
   padding: 1rem 0;
-  background: #333;
+  background: var(--black);
   color: #fff;
 }
 
