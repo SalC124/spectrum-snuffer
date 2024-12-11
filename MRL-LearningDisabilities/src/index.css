@@ -3,6 +3,9 @@
   --darker-gray: #3b4252;
   --dark-gray: #434c5e;
   --gray: #4c566a;
+  --light-gray: #d8dee9;
+  --lightest-gray: #e5e9f0;
+  --white: #eceff4;
 
   --teal: #8fbcbb;
   --light-blue: #88c0d0;
@@ -13,6 +16,14 @@
   --yellow: #ebcb8b;
   --green: #a3be8c;
   --porpol: #b48ead;
+  
+  /*NEW TUFF COLORS */
+  --blackest: #2c3531;
+  --greeb: #116466;
+  --tan: #d9b08c;
+  --bagel: #ffcb9a;
+  --perry: #d1e8e2;
+
 }
 
 * {
@@ -24,15 +35,15 @@
 
 body {
   line-height: 1.6;
-  background-color: #eceff4;
-  color: #333;
-  background: var(--dark-gray)
+  background-color: var(--blackest);
+  color: var(--perry);
+  background: var(--blackest)
 }
 
 header {
-  background: var(--black);
-  color: #fff;
-  /* padding: 1rem 0; */
+  background: linear-gradient(180deg, var(--blackest) 0%, var(--blackest) 50%, var(--greeb) 100%);
+  color: var(--bagel);
+  padding: 1rem 0;
   text-align: center;
 }
 
@@ -40,19 +51,19 @@ nav {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  background: var(--darker-gray);
+  background: var(--greeb);
   padding: 0.5rem 0;
 }
 
 nav a {
-  color: #fff;
+  color: var(--perry);
   text-decoration: none;
   font-weight: 700;
 }
 
 .hero {
-  background: linear-gradient(to bottom, var(--darker-gray), var(--gray));
-  color: #fff;
+  background: linear-gradient(to bottom, var(--greeb), var(--blackest));
+  color: var(--perry);
   padding: 4rem 2rem;
   text-align: center;
 }
@@ -69,94 +80,30 @@ nav a {
   gap: 2rem;
 }
 
-.card-ai {
-  background: var(--darker-gray);
+.card, .card-ai {
+  background: var(--blackest);
   padding: 1.5rem;
   border-radius: 15px;
-  box-shadow: 12px 12px 0px var(--gray);
-  color: var(--light-blue)
+  box-shadow: 12px 12px 0px var(--bagel);
+  color: var(--perry);
+}
+.card:hover, .card-ai:hover {
+  box-shadow: -12px -12px 0px var(--tan);
+}
+.card, .card-ai {
+  transition: box-shadow 0.4s ease;
 }
 
-.card {
-  background: var(--darker-gray);
-  padding: 1.5rem;
-  border-radius: 15px;
-  box-shadow: 12px 12px 0px var(--gray);
-  color: var(--light-blue)
+.space {
+  background-image: url(Our_team.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-position: center; 
 }
 
 footer {
   text-align: center;
   padding: 1rem 0;
-  background: var(--black);
-  color: #fff;
+  background: var(--greeb);
+  color: var(--bagel);
 }
-
-/* :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
