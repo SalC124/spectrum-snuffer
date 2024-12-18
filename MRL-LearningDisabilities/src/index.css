@@ -94,11 +94,12 @@ nav a {
   transition: box-shadow 0.4s ease;
 }
 
-.space {
-  background-image: url(Our_team.jpg);
+.img {
+  padding: 5px;
   background-size: cover;
   background-repeat: no-repeat; 
-  background-position: center; 
+  background-position: center;
+  object-fit: fill;
 }
 
 footer {
