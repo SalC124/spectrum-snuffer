@@ -21,8 +21,8 @@
   --blackest: #2c3531;
   --greeb: #116466;
   --tan: #d9b08c;
-  --bagel: #ffcb9a;
-  --perry: #d1e8e2;
+  --bagel: #d7a06d;
+  --perry: #aecac2;
 
 }
 
@@ -81,11 +81,11 @@ nav a {
 }
 
 .card, .card-ai {
-  background: var(--blackest);
+  background: var(--perry);
   padding: 1.5rem;
   border-radius: 15px;
   box-shadow: 12px 12px 0px var(--bagel);
-  color: var(--perry);
+  color: var(--blackest);
 }
 .card:hover, .card-ai:hover {
   box-shadow: -12px -12px 0px var(--tan);
