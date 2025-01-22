@@ -41,7 +41,7 @@ body {
 }
 
 header {
-  background: linear-gradient(180deg, var(--blackest) 0%, var(--blackest) 50%, var(--greeb) 100%);
+  background: var(--blackest);
   color: var(--bagel);
   padding: 1rem 0;
   text-align: center;
@@ -51,19 +51,19 @@ nav {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  background: var(--greeb);
+  background: var(--perry);
   padding: 0.5rem 0;
 }
 
 nav a {
-  color: var(--perry);
+  color: var(--black);
   text-decoration: none;
   font-weight: 700;
 }
 
 .hero {
-  background: linear-gradient(to bottom, var(--greeb), var(--blackest));
-  color: var(--perry);
+  background: var(--bagel);
+  color: var(--black);
   padding: 4rem 2rem;
   text-align: center;
 }
