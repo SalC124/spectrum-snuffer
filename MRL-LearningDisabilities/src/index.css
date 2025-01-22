@@ -18,11 +18,11 @@
   --porpol: #b48ead;
   
   /*NEW TUFF COLORS */
-  --blackest: #607274;
-  --greeb: #FAEED1;
-  --tan: #d9b08c;
-  --bagel: #DED0B6;
-  --perry: #B2A59B;
+  --blackest: #282828;
+  --greeb: #bdae93;
+  --tan: #3c3836;
+  --bagel: #ebdbb2;
+  --perry: #928374;
 
 }
 
@@ -84,11 +84,11 @@ nav a {
   background: var(--perry);
   padding: 1.5rem;
   border-radius: 15px;
-  box-shadow: 12px 12px 0px var(--bagel);
+  box-shadow: 12px 12px 0px var(--greeb);
   color: var(--blackest);
 }
 .card:hover, .card-ai:hover {
-  box-shadow: -12px -12px 0px var(--tan);
+  box-shadow: -12px -12px 0px var(--greeb);
 }
 .card, .card-ai {
   transition: box-shadow 0.4s ease;
